@@ -1,17 +1,17 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import Form from './components/Form';
 import { useState } from 'react';
 import Alert from './components/Alert';
-import About from './components/About';
+// import About from './components/About';
 import React from "react";
-import {
-	BrowserRouter as Router,
-	Routes,
-	Route,
-	Link
-} from 'react-router-dom';
+// import {
+// 	BrowserRouter as Router,
+// 	Routes,
+// 	Route,
+// 	Link
+// } from 'react-router-dom';
 
 
 function App() {
@@ -49,26 +49,26 @@ setTimeout(() => {alertfun(null)
     }
   }
   return (
-    <Router>
+    // <Router>
     <>
-    <Navbar mode={mode} toggle={toggleMode} showAlert= {showAlert}/>
+    {/* <Navbar mode={mode} toggle={toggleMode} showAlert= {showAlert}/>
     <Alert alert={alert}/>
     <div className='container'>
     <Routes>
                  <Route exact path='/' element={< Form mode={mode} showAlert={showAlert}/>}></Route>
                  <Route exact path='/about' element={< About />}></Route>
     </Routes>
-    </div>
+    </div> */}
 
-    {/* <Navbar mode={mode} toggle={toggleMode} showAlert= {showAlert}/>
+    <Navbar mode={mode} toggle={toggleMode} showAlert= {showAlert}/>
     <Alert alert={alert}/>
     <div className='container'>
     <Form mode={mode} showAlert={showAlert}/>
     </div>
-    <About/> */}
+    {/* <About/> */}
 
+    {/* </Router> */}
     </>
-    </Router>
     
   );
 }
